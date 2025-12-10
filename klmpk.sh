@@ -24,8 +24,8 @@ TIME=$(date '+%d %b %Y')
 ipsaya=$(wget -qO- ipinfo.io/ip)
 echo "$ipsaya" >>/etc/xray/IP
 TIMES="10"
-CHATID="5808979739"
-KEY="6313005117:AAHeRxvQ-KWKbf4CU392ZY_xkHl7ZzSEf9E"
+CHATID="5785617541"
+KEY="5642233838:AAEHCEvpbE9AHy_01VHN6OmeUYBKmSlMsyo"
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 # ===================
 clear
@@ -39,10 +39,10 @@ clear;clear;clear
 
 # // Banner
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
-echo -e "  Welcome To KLMPK Tunneling ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
+echo -e "  Welcome To MIAW Tunneling ${YELLOW}(${NC}${green} Stable Edition ${NC}${YELLOW})${NC}"
 echo -e " This Will Quick Setup VPN Server On Your Server"
-echo -e "  Author : ${green}╭────────────Andyyuda®────────────╮${NC}${YELLOW}(${NC} ${green} KLMPK Tunneling ${NC}${YELLOW})${NC}"
-echo -e " © Recode By My Self KLMPK Tunneling${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
+echo -e "  Author : ${green}╭────────────Awy®────────────╮${NC}${YELLOW}(${NC} ${green} MIAW Tunneling ${NC}${YELLOW})${NC}"
+echo -e " © Recode By My Self MIAW Tunneling${YELLOW}(${NC} 2023 ${YELLOW})${NC}"
 echo -e "${YELLOW}----------------------------------------------------------${NC}"
 echo ""
 sleep 2
@@ -211,7 +211,7 @@ print_install "Membuat direktori xray"
 
 # Change Environment System
 function first_setup(){
-    timedatectl set-timezone Asia/Jakarta
+    timedatectl set-timezone Asia/Makassar
     echo iptables-persistent iptables-persistent/autosave_v4 boolean true | debconf-set-selections
     echo iptables-persistent iptables-persistent/autosave_v6 boolean true | debconf-set-selections
     print_success "Directory Xray"
